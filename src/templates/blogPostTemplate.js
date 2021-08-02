@@ -5,6 +5,7 @@ import { Layout } from '../components/Layout'
 import thorns from '../images/thorn-divider.svg'
 import SoundCloud from '../components/SoundCloud'
 import Spotify from '../components/Spotify'
+import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx
@@ -22,6 +23,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO title={frontmatter.title} description={frontmatter.excerpt} />
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center flex-col md:flex-row mb-24 md:mb-12">
           <div className="border w-80 md:w-56 border-black mr-0 md:mr-4 mb-8 md:mb-0">
