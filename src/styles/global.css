@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Slab&display=swap');
+
+html, body, #__gatsby {
+  @apply h-full;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.headline {
+  font-family: 'Courier Prime', monospace;
+}
+
+.post-body h2 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2rem;
+}
+
+.post-body p {
+  margin-bottom: 1rem;
+}
