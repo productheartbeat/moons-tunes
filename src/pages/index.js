@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout'
 import Moment from 'react-moment'
 import thorns from '../images/thorn-divider.svg'
 import dcm from '../images/d_chandler_moon_tomb.png'
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 
 const Home = ({data}) => {
@@ -12,7 +12,7 @@ const Home = ({data}) => {
   return (
     <>
       <Layout>
-        <SEO title={"Moon's Tunes"} description={"Unpopular. Uncancelled. Unashamed."} />
+        <Seo title={"Moon's Tunes"} description={"Unpopular. Uncancelled. Unashamed."} />
         <img className="w-88 mx-auto" src={dcm} alt="D Chandler Moon" />
         <img className="w-full py-24 transform" style={{transform: "scaleX(-1)"}} src={thorns} alt="Thorns" />
         <div className="max-w-5xl mx-auto px-4 md:px-0">
